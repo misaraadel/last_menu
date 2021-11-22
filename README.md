@@ -1,4 +1,4 @@
-# Frizir app
+# Menu app
 
 ## Setup
 
