@@ -211,6 +211,23 @@ const contactDesc= 'قم بتعبئة النموذج المقابل وأطلب �
         z-index: -1;
     }
 
+    .form-input{
+        &.select{
+            &::after{
+                content: '';
+                position: absolute;
+                width: 14px;
+                height: 7px;
+                background: url('/img/arrow.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                left: 17px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
     .meal-shape{
         animation: spin 10s linear infinite;
         border-radius: 50%;

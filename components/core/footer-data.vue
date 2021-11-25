@@ -106,7 +106,7 @@
         </div>
       </div>
 
-      <div class="heading-content mt-9 mb-5 relative z-max">
+      <div class="heading-content w-full mt-9 mb-5 relative z-max">
         <h4 class="text-copyrights bg-primary px-12 text-secondary font-normal leading-paragraph relative w-fit-content m-auto">
           {{ socailMedia }}
         </h4>
@@ -152,6 +152,7 @@ footer{
       height: 1px;
       background-color: rgba($color: #fff, $alpha: .10);
       top: 50%;
+      left: 0px;
       transform: translateY(-50%);
       z-index: -1;
     }
