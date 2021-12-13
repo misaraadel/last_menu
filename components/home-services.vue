@@ -67,5 +67,11 @@ const serviceDesc = 'تعاني معظم مشاريع المطاعم في الب
         right: 0;
         z-index: -1;
     }
+
+    .service-box{
+        img{
+            animation: bounce-in-fwd 4s linear infinite;
+        }
+    }
 }
 </style>
