@@ -70,7 +70,7 @@ const serviceDesc = 'تعاني معظم مشاريع المطاعم في الب
 
     .service-box{
         img{
-            animation: bounce-in-fwd 4s linear infinite;
+            animation: translateX 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
         }
     }
 }
