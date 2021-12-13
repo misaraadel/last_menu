@@ -5,7 +5,7 @@
             <div :class="i%2===0?`lg:order-last md:order-first sm:order-first lg:col-start-3 lg:col-end-5` : `lg:order-first md:order-first sm:order-first lg:col-start-1 lg:col-end-3`">
                 <img 
                     :src="`/img/${list.img}.png`"
-                    class="w-full h-header object-contain lg:my-12 md:my-9 sm:my-7"
+                    class="w-full h-header object-contain lg:my-11 md:my-10 sm:my-20 my-20"
                     :class="i%2===0?`lg:object-left sm:object-center`:`lg:object-right sm:object-center`"
                     :alt="`${list.title}`" />
             </div>
