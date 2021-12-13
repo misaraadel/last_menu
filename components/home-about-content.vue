@@ -1,5 +1,5 @@
 <template>
-<section class="about-content overflow-hidden bg-white">
+<section class="about-content pt-10 pb-24 overflow-hidden bg-white">
     <div class="container">
         <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 grid-cols-1" v-for="(list , i) in servicesList" :key="list.code">
             <div :class="i%2===0?`lg:order-last md:order-first sm:order-first lg:col-start-3 lg:col-end-5` : `lg:order-first md:order-first sm:order-first lg:col-start-1 lg:col-end-3`">
