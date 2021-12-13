@@ -1,5 +1,5 @@
 <template>
-<header class="pt-52 pb-14 w-full bg-cover bg-no-repeat" id="intro" style="background-image:url('/img/header.png');">
+<header class="pt-52 pb-14 w-full bg-cover bg-no-repeat" style="background-image:url('/img/header.png');">
     <div class="container py-4">
         <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:gap-72 md:gap-12 sm:gap-10 gap-10">
             <div class="w-full h-full flex flex-col justify-center">

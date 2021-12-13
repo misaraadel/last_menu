@@ -1,5 +1,5 @@
 <template>
-<section class="about-us overflow-hidden py-24 bg-white relative z-max" id="about">
+<section class="about-us overflow-hidden pt-24 bg-white relative z-max">
     <div class="container">
         <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
             <div class="lg:col-start-1 lg:col-end-3">
@@ -18,9 +18,11 @@
                         :headContent="`${aboutHeading}`"
                         descriptionStyle="text-dark text-paragraph mt-8 mb-8"
                         :description="`${aboutDesc}`" />
+                        
                     <p class="text-dark text-paragraph mb-10">
                         {{ aboutSlogan }}
                     </p>
+
                     <coreCall-to-action 
                         btnClass="primary"
                         img="secondary"

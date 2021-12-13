@@ -7,7 +7,7 @@
          <ul class="navbar-nav flex flex-row items-center content-center">
             <template v-for="nav in navs" :key="nav.img">
                <li class="ml-7">
-                  <a :href="`${nav.link}`" class="link-content flex items-center content-center">
+                  <NuxtLink :to="`${nav.link}`" class="link-content flex items-center content-center">
                      <img
                         :src="`/img/${nav.img}.svg`"
                         class="w-navIcon h-navIcon object-contain ml-2"
@@ -16,7 +16,7 @@
                      <span class="text-paragraph font-normal leading-paragraph text-white">
                         {{ nav.title }}
                      </span>
-                  </a>
+                  </NuxtLink>
                </li>
             </template>
          </ul>
@@ -37,24 +37,24 @@
 
    const navs = ref([{
 
-         link: '#intro',
+         link: '/',
          img: 'home',
          title: 'الرئيسية',
       
       },{
       
-         link: '#about',
+         link: '/about',
          img: 'about',
          title: 'عن المينيو'
       
       },{
 
-         link: '#menu',
+         link: '/menu',
          img: 'menu',
          title: 'منيو المطاعم'
       
       },{
-         link: '#services',
+         link: '/established-resturant',
          img: 'services',
          title: 'الخدمات'
       }

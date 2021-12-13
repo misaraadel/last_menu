@@ -2,7 +2,7 @@
 <div>
   <home-intro />
 
-  <home-about />
+  <home-about class="pb-24"/>
 
   <home-services />
 

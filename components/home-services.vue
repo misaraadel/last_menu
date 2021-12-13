@@ -11,20 +11,12 @@
 
         <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
             <template v-for="service in services" :key="service.img">
-                <div class="box w-full overflow-hidden relative z-max flex flex-col justify-center items-center content-center text-center py-12 px-9 bg-white rounded-card">
-                    <img 
-                        :src="`/img/${service.img}.svg`"
-                        class="w-card h-card object-contain"
-                        :alt="`${service.title}`" />
-
-                    <h4 class="text-services leading-paragraph my-6 text-dark">
-                        {{ service.title }}
-                    </h4>
-
-                    <p class="text-paragraph font-normal leading-paragraph text-contact">
-                        {{ service.desc }}
-                    </p>
-                </div>
+                <nuxtLink :to="`/${service.page}`" class="p-0">
+                    <coreCard 
+                        :boxImage="`${service.img}`"
+                        :boxTitle="`${service.title}`"
+                        :boxDesc="`${service.desc}`" />
+                </nuxtLink>
             </template>
         </div>
     </div>
@@ -36,14 +28,17 @@ import { ref } from 'vue'
 
 const services = ref([
     {
+        page: 'established-resturant',
         img: 'service_1',
         title: 'تأسيس المطاعم',
         desc: 'نساعدك في تأسيس مطعمك او الكوفي شوب الخاص بك بشكل احترافي، من الفكرة وحتى الافتتاح حتي تتمكن من تأسيس مشروعك خلال إطار زمني محدد وتجنب الكثير من المخاطر.'
     },{
+        page: 'development-resturant',
         img: 'service_2',
         title: 'تطوير المطاعم',
         desc: 'نساعدك في إدارة مطعمك بشكل احترافي من خلال المتابعة المستمرة للفروع والاشراف الكامل على جميع عمليات التشغيل داخل المطعم، بالاضافة لوضع الخطة المناسبة لتطوير المشروع وفريق العمل'
     },{
+        page: 'operating-resturant',
         img: 'service_3',
         title: 'تشغيل المطاعم',
         desc: 'اذا كنت تواجه مشكلة في المبيعات او الأرباح فقد يكون مطعمك بحاجة الى تطوير من اجل تحقيق الاهداف التي تخطط لها. فريق المنيو جاهز لمساعدتك في مواجهة التحديات التي يواجهها مطعمك .'
@@ -72,48 +67,5 @@ const serviceDesc = 'تعاني معظم مشاريع المطاعم في الب
         right: 0;
         z-index: -1;
     }
-
-    .box{
-        transition: all .4s linear;
-        box-shadow: 0px 0px 20px rgba($color: #3F0366, $alpha: .03);
-
-        &::after{
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(-38deg,#3F0366 0,#662851 100%);
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            transform: scale(1, 0);
-            transform-origin: bottom;
-            transition: transform 500ms ease;
-        }
-
-        &:hover{
-            transform: translateY(-10px);
-            box-shadow: 0px 0px 20px rgba($color: #3F0366, $alpha: .1);
-
-            img{
-                animation: rotation 1s linear;
-            }
-
-            &::after{
-                transform: scale(1 , 1);
-                transform-origin: top !important;
-            }
-
-            h4 {
-                color: #EBA40C;
-            }
-
-            p{
-                color: #fff;
-            }
-        }
-    }   
 }
 </style>

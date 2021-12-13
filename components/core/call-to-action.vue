@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a href="#contact" :class="`${btnClass} custom-btn z-max relative flex justify-center rounded-btn items-center content-center w-btn h-btn`">
+    <nuxtLink to="/contact" :class="`${btnClass} custom-btn z-max relative flex justify-center rounded-btn items-center content-center w-btn h-btn`">
       <img 
         :src="`/img/${img}_arrow.svg`"
         class="w-navIcon h-navIcon z-max relative object-contain ml-2"
@@ -9,7 +9,7 @@
       <span :class="`${textColor} text-paragraph font-normal leading-paragraph`">
         أطلب الخدمة
       </span>
-    </a>
+    </nuxtLink>
   </div>
 </template>
 

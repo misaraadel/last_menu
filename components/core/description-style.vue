@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="heading-data">
     <h4 :class="`${headingStyle} text-heading font-bold`">
         {{ headContent }}
     </h4>
